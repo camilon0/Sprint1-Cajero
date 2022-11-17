@@ -27,8 +27,10 @@ let billete100 = 0;
 let billete50 = 0;
 
 while (true) {
-  let idInput = prompt("Ingrese su documento");
-  let passInput = prompt("Ingrese su clave");
+  let idInput = prompt(
+    "Ingrese su documento (para recargar el cajero debes poner el admin que es: documento: 2 y contraseña: c y para retirar dinero: documento: 0 o 1 y contraseña: a o b, respectivamente )"
+  );
+  let passInput = prompt("Ingrese su clave ");
 
   let usersFind = users.find((element) => element.id === idInput);
 
